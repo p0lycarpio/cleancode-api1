@@ -1,0 +1,19 @@
+{
+  "name": "cleancode-api1",
+  "version": "1.0.0",
+  "description": "Implémentation de l'algorithme 1 dans une API rest Javascript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p0lycarpio/cleancode-api1.git"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arsène Reymond",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "type": "module"
+}
