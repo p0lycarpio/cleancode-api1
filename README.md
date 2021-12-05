@@ -4,7 +4,7 @@
 ## Installation
 Clone the repo and install dependencies.
 
-```
+```bash
 git clone git@github.com:p0lycarpio/hero_api.git
 cd cleancode-api1
 npm install
