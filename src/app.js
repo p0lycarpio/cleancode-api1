@@ -1,8 +1,7 @@
 import express from "express"
-
 import allRoutes from './routes/routes.js';
-
 import {SERVER_PORT} from './config/constantes/constantes.js'
+
 const app = express()
 
 app.use(allRoutes);

@@ -3,6 +3,8 @@ import express from "express"
 import {determinerCle} from '../services/cleServices.js'
 const app = express()
 
+// Route qui appelle determinerCle. Prend un entier 
+
 app.get(["/client/:id/creation"], (req, res) => {
     let id, response
     if (isNaN(req.params.id)) {
