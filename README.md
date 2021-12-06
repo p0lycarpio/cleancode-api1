@@ -13,7 +13,7 @@ npm install
 Run the API with `node src/app.js`
 
 ## Test
-Run tests wih Jest
+Run tests with Jest
 
 ```bash
 npm test
