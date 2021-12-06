@@ -11,3 +11,13 @@ npm install
 ```
 
 Run the API with `node src/app.js`
+
+## Documentation
+
+Generate documentation :
+
+```bash
+./node_modules/.bin/jsdoc ./src/services/cleServices.js
+```
+
+Open `index.html` in "out" generated folder.
