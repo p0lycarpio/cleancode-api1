@@ -27,7 +27,7 @@ app.get('/client/:id/verification', (req, res) => {
 
 
 //////////////
-var route, routes = [];
+var routes = [];
 app.use("/", router);
 
 app._router.stack.forEach(function (middleware) {
@@ -50,5 +50,5 @@ app.get('/', (req, res) => {
 /////////////
 
 app.listen(port, () => {
-    console.log(`Serveur à l\'écoute sur http://localhost:${port}`)
+    console.log(`Serveur à l'écoute sur http://localhost:${port}`)
 })
