@@ -1,4 +1,4 @@
-const alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+const alphabet = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 
 // Make the sum of each digit present in a string or in an integer
 

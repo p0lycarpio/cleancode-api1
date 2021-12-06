@@ -1,20 +1,20 @@
 import express from "express"
-import programme from './script.js'
+import programme from "./script.js"
 const app = express()
 const router = express.Router();
 const port = 8080
 
 app.post("/foo", function (req, res) {
-    res.send('foo');
+    res.send("foo");
 });
 
 
-app.get('/:id/', (req, res) => {
+app.get("/:id/", (req, res) => {
     const id = req.params.id
     res.send(id)
 })
 
-app.get('/client/:id/verification', (req, res) => {
+app.get("/client/:id/verification", (req, res) => {
     const id = req.params.id
     let response = programme(id)
 
@@ -42,7 +42,7 @@ app._router.stack.forEach(function (middleware) {
     }
 });
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
     res.send({
         routes
     })

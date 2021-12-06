@@ -1,7 +1,7 @@
-const alphabet = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+const alphabet = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 
 // test values
-let input = 'J123456789' // passant
+let input = "J123456789" // passant
 let bigin = "E99999999999" // non passant
 let intex = 875
 
@@ -32,12 +32,12 @@ function compare(input, k) {
 function programme(input) {
     // Run the function and iterates to have number < 15
     let FirstSum = sumDigits(input)
-    console.log('FirstSum:', FirstSum)
+    console.log("FirstSum:", FirstSum)
     let SumLoop = FirstSum
     
     while (SumLoop > 15) {
         SumLoop = sumDigits(SumLoop)
-        console.log('Looping: ', SumLoop)
+        console.log("Looping: ", SumLoop)
     }
 
     // Find alphabetic key
