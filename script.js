@@ -24,7 +24,7 @@ function compare(input, k) {
 }
 
 
-export default function programme(input) {
+export default function determinerCle(input, method) {
     // Run the function and iterates to have number < 15
     let FirstSum = sumDigits(input)
     let SumLoop = FirstSum
@@ -35,5 +35,7 @@ export default function programme(input) {
 
     // Find alphabetic key
     let key = alphabet[SumLoop]
-    return compare(input, key)
+
+    // Return identification
+    return (method === 1 & !isNaN(input)) ? key+input : compare(input, key)
 }

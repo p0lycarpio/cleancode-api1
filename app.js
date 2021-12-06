@@ -1,12 +1,8 @@
 import express from "express"
-import programme from "./script.js"
+import determinerCle from "./script.js"
 const app = express()
 const router = express.Router();
 const port = 8080
-
-app.post("/foo", function (req, res) {
-    res.send("foo");
-});
 
 
 app.get("/:id/", (req, res) => {
@@ -14,9 +10,9 @@ app.get("/:id/", (req, res) => {
     res.send(id)
 })
 
-app.get("/client/:id/verification", (req, res) => {
+app.get(["/client/:id/verification"], (req, res) => {
     const id = req.params.id
-    let response = programme(id)
+    let response = determinerCle(id, 0)
 
     res.status(200).send({
         status: "OK",
@@ -25,6 +21,22 @@ app.get("/client/:id/verification", (req, res) => {
     })
 })
 
+app.get(["/client/:id/creation"], (req, res) => {
+    let id, response
+    if (isNaN(req.params.id)) {
+        id = req.params.id
+        response = "Input is NaN"
+    } else {
+        id = parseFloat(req.params.id)
+        response = determinerCle(id, 1)
+    }
+
+    res.status(200).send({
+        status: "OK",
+        request: id,
+        result: response
+    })
+})
 
 //////////////
 var routes = [];

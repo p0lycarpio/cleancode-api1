@@ -29,7 +29,7 @@ function compare(input, k) {
 }
 
 
-function programme(input) {
+function determinerCle(input) {
     // Run the function and iterates to have number < 15
     let FirstSum = sumDigits(input)
     console.log("FirstSum:", FirstSum)
@@ -47,4 +47,4 @@ function programme(input) {
     console.log(compare(input, key))
 }
 
-programme(input)
+determinerCle(input)
