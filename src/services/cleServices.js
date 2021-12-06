@@ -1,13 +1,16 @@
+/** @namespace CleService */
+
 const alphabet = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+
 
 /**
  * @name sumDigits
- * @description Make the sum of each digit present in a string or in an integer
- * @argument {number} keyValue
- * @return {number}
-*/
-
-function sumDigits(keyValue) {
+ * @description Do an addition on all terms of an integer
+ * @memberof CleService
+ * @param {int} keyValue - the value used for addition of all terms
+ * @return {int} sum - Sum of all the terms of keyValue
+ */
+ function sumDigits(keyValue) {
     let sum = 0
 
     while (keyValue) {
@@ -19,11 +22,11 @@ function sumDigits(keyValue) {
 
 /**
  * @name verifierCle
- * @description Check the correspondence between the input key and the sum
- * @argument {string} cle
- * @return {boolean}
-*/
-
+ * @description Verify if a given Key is correct
+ * @memberof CleService
+ * @param {string} cle - in form of 1 Letter + Numbers
+ * @return {int} keyValidity - an Int with a value of 1 or 0 (equivalent to a boolean)
+ */
 export function verifierCle(cle) {
     let SumLoop = parseInt(cle.substring(1))
     let keyValidity
@@ -47,15 +50,13 @@ export function verifierCle(cle) {
     return keyValidity
 }
 
-
 /**
  * @name determinerCle
- * @description Compute the key from the number input. Return id (key+number)
- * @argument {number} chiffresInput
- * @return {string}
-*/
-
-
+ * @description Calculate and return a key based on an array
+ * @memberof CleService
+ * @param {int} chiffresInput - Some numbers
+ * @return {string} a string in form of the Letter calculated + chiffresInput
+ */
 export function determinerCle(chiffresInput) {
     let chiffresCle = chiffresInput
     let cle
