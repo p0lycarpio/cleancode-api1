@@ -15,10 +15,12 @@
   "author": "Arsène Reymond, Esteban Chacon",
   "license": "ISC",
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.1",
+    "jsdoc": "^3.6.7"
   },
   "type": "module",
   "devDependencies": {
-    "eslint": "^8.4.0"
+    "eslint": "^8.4.0",
+    "jest": "^27.4.3"
   }
 }
