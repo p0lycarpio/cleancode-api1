@@ -9,7 +9,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --quiet --cache .; exit 0",
+    "lint": "eslint --cache .; exit 0",
     "lint-fix": "npm run lint -- --fix"
   },
   "author": "Arsène Reymond, Esteban Chacon",
