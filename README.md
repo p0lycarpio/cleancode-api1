@@ -10,4 +10,4 @@ cd cleancode-api1
 npm install
 ```
 
-Run the API with `node app.js`
+Run the API with `node src/app.js`

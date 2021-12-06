@@ -1,11 +1,11 @@
 import express from "express"
 
-import verifyKeyValidity from '../services/verifyID.js'
+import {verifierCle} from '../services/cleServices.js'
 const app = express()
 
-app.get('/client/:id/verification', (req, res) => {
+app.get(["/client/:id/verification"], (req, res) => {
     const id = req.params.id
-    let response = verifyKeyValidity(id)
+    let response = verifierCle(id, 0)
 
     res.status(200).send({
         status: "OK",
@@ -13,4 +13,5 @@ app.get('/client/:id/verification', (req, res) => {
         result: response
     })
 })
+
 export default app;

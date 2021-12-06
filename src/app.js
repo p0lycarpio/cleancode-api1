@@ -8,5 +8,5 @@ const app = express()
 app.use(allRoutes);
 
 app.listen(SERVER_PORT, () => {
-    console.log(`🚀 Serveur à l\'écoute sur http://localhost:${SERVER_PORT}`)
+    console.log(`🚀 Serveur à l'écoute sur http://localhost:${SERVER_PORT}`)
 })
