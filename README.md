@@ -12,6 +12,13 @@ npm install
 
 Run the API with `node src/app.js`
 
+## Test
+Run tests wih Jest
+
+```bash
+npm test
+```
+
 ## Documentation
 
 Generate documentation :
